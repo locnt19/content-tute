@@ -1,0 +1,78 @@
+.gioithieu
+	.banner
+		img
+			filter: brightness(70%)
+		.breadcrumb
+			h1
+				display: none
+			+media-breakpoint-up(lg)
+				color: #fff
+				position: absolute
+				top: 270px
+				h1
+					display: block
+					font-weight: 700
+					font-size: 41px
+				a
+					color: #fff
+	.choose,
+	.about,
+	.team
+		background: url(../img/banner/bn-4.png) no-repeat center center fixed
+		background-size: cover
+		padding-bottom: 50px
+		h2
+			font-size: 30px
+			text-align: center
+			padding: 50px 0
+			font-weight: 700
+		.item
+			text-align: center
+			h3
+				font-size: 18px
+			p
+				font-size: 15px
+	.about
+		background: url(../img/banner/bn-5.png) no-repeat center center fixed
+		background-size: cover
+		.item
+			text-align: left
+			h3
+				font-size: 30px
+				font-weight: 400
+				margin-top: 1rem
+				+media-breakpoint-up(lg)
+					margin-top: 0
+			p
+				font-size: 18px
+	.team
+		background: url(../img/banner/bn-6.png) no-repeat center center fixed
+		background-size: cover
+		text-align: center
+		position: relative
+		h3
+			font-size: 20px
+			font-weight: 700
+		p
+			font-size: 14px
+			font-weight: 600
+		.navi
+			width: 100%
+			font-size: 48px
+			color: #cccccc
+			position: absolute
+			top: 50%
+			left: 0
+			transform: translateY(-50%)
+			.b
+				width: 50px
+				height: 50px
+				display: flex
+				align-items: center
+				justify-content: center
+				background: #c7d81c
+				position: absolute
+				&:fist-child
+					left: -50px
+				&:last-child
+					right: -50px
