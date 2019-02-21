@@ -1,23 +1,33 @@
 .gioithieu
 	.banner
+		position: relative
 		img
 			filter: brightness(70%)
 		.breadcrumb
 			h1
 				display: none
+			ul
+				margin: 14px 0
+			a
+				color: #333
 			+media-breakpoint-up(lg)
 				color: #fff
 				position: absolute
-				top: 270px
+				top: 30%
+				ul
+					margin: 0
 				h1
 					display: block
 					font-weight: 700
 					font-size: 41px
+					color: #fff
 				a
+					margin: 0
 					color: #fff
 	.choose,
 	.about,
-	.team
+	.team,
+	.feedback
 		background: url(../img/banner/bn-4.png) no-repeat center center fixed
 		background-size: cover
 		padding-bottom: 50px
@@ -25,6 +35,7 @@
 			font-size: 30px
 			text-align: center
 			padding: 50px 0
+			margin: 0
 			font-weight: 700
 		.item
 			text-align: center
@@ -48,7 +59,8 @@
 		background: url(../img/banner/bn-6.png) no-repeat center center fixed
 		background-size: cover
 		text-align: center
-		position: relative
+		.container
+			position: relative
 		h3
 			font-size: 20px
 			font-weight: 700
@@ -58,20 +70,47 @@
 		.navi
 			width: 100%
 			font-size: 48px
-			color: #cccccc
-			position: absolute
-			top: 50%
-			left: 0
-			transform: translateY(-50%)
-			.b
-				width: 50px
-				height: 50px
-				display: flex
-				align-items: center
-				justify-content: center
-				background: #c7d81c
+			color: #ccc
+			.left, .right
+				outline: none
+				display: inline-block
+				cursor: pointer
+			+media-breakpoint-up(lg)
+				top: 50%
 				position: absolute
-				&:fist-child
-					left: -50px
-				&:last-child
-					right: -50px
+				left: 0
+				transform: translateY(-50%)
+				.left, .right
+					position: absolute
+				.left
+					left: -30px
+				.right
+					right: -30px
+	.feedback
+		background: url(../img/banner/bn-3.png) no-repeat center center fixed
+		background-size: cover
+		color: #fff
+		text-align: center
+		h2
+			padding: 60px 0 50px
+		.item
+			h3
+				font-weight: 300
+				font-size: 24px
+			p
+				margin-top: 16px
+				opacity: .5
+		.swiper-container
+			margin-top: 48px
+			width: 70%
+		.pagi
+			margin-top: 125px
+			span
+				width: 10px
+				height: 10px
+				background: #8e99a3
+				opacity: 1
+				&.swiper-pagination-bullet-active
+					background: #ff6d00
+				+ span
+					margin-left: 10px
