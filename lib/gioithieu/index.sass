@@ -1,4 +1,4 @@
-.gioithieu
+.gioithieu, .ct-banner-2
 	.banner
 		position: relative
 		img
@@ -8,12 +8,15 @@
 				display: none
 			ul
 				margin: 14px 0
-			a
+			a 
+				+fz(13px)
 				color: #333
 			+media-breakpoint-up(lg)
 				color: #fff
 				position: absolute
 				top: 30%
+				a 
+					+fz(16px)
 				ul
 					margin: 0
 				h1
