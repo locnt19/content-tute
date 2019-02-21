@@ -1,0 +1,57 @@
+.ct-feel
+	background: url(../img/banner/bn-3.png) no-repeat 
+	background-size: cover
+	+pad(r(30px) 0)
+	.title 
+		margin-bottom: r(20px)
+		text-align: center
+		h2 
+			color: #ffffff
+	.swiper-container 
+		.swiper-slide
+			text-align: center
+			.img 
+				margin-bottom: 30px
+			.text 
+				max-width: r(763px)
+				margin: auto
+				p
+					margin-bottom: 10px
+					+fz(15px)
+					color: #ffffff
+				h6
+					+fw(400)
+					+fz(13px)
+					color: #9ba1a8
+					margin-bottom: 30px
+		.swiper-pagination 
+			+pos(abs, null 0 0 null)
+	+media-breakpoint-up(lg)
+		+pad(r(60px) 0)
+		.swiper-container 
+			.swiper-slide
+				.text 
+					p 
+						margin-bottom: 30px
+						+fz(20px)
+					h6
+						+fz(16px)
+						margin-bottom: 60px
+	+media-breakpoint-up(xl)
+		&:before 
+			content: ''
+			display: block 
+			background: url("../img/social-2.png") no-repeat 
+			height: 335px
+			width: 100%
+			position: absolute
+			left: -227px
+		&:after 
+			content: ''
+			display: block 
+			background: url("../img/social-1.png") no-repeat 
+			height: 511px
+			width: 330px
+			position: absolute
+			right: 0
+			transform: translateY(-70%)

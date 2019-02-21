@@ -1,0 +1,16 @@
+section.ct-sliders
+	.container
+		.row.no-gutters 
+			.col 
+				.brick
+		.swiper-container 
+			.swiper-wrapper
+				-for(x=0; x<5; x++)
+					.swiper-slide 
+						.img 
+							img(src="./img/slider/slider-1.png", alt="")
+			.swiper-nav
+				.swiper-prev
+					em.lnr.lnr-chevron-left
+				.swiper-next
+					em.lnr.lnr-chevron-right

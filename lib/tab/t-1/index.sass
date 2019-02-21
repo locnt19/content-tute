@@ -1,0 +1,91 @@
+.ct-tab, .gioithieu
+	background: url("../img/banner/bn-7.png")
+	.tab-list 
+		.item 
+			.img
+				background: #7f4c26
+			+ .item 
+				.img
+					background: #bb5e30 
+				+ .item 
+					.img
+						background: #db9a45
+					+ .item 
+						.img
+							background: #bea05d
+						+ .item 
+							.img
+								background: #64909b
+							+ .item 
+								.img
+									background: #68802d
+			a 
+				text-decoration: none
+				text-align: center
+				.img 
+					padding: 10px
+					.conten
+						margin-top: r(14px)
+						h3 
+							+fz(r(15px))
+							+fw(400)
+							color: #ffffff
+							display: -webkit-box
+							-webkit-box-orient: vertical
+							-webkit-line-clamp: 3
+							overflow: hidden
+	.tab-content 
+		text-align: center
+		+pad(r(30px) 0)
+		.title 
+			margin-bottom: r(20px)
+		figure 
+			figcaption 
+				h3 
+					+fz(r(15px))
+					+fw(600)
+					max-width: r(262px)
+					margin: 0 auto 18px auto
+				p 
+					max-width: r(278px)
+					+fz(13px)
+					margin: auto
+					color: #666666
+	+media-breakpoint-up(lg)
+		.tab-content 
+			+pad(r(60px) 0)
+			.title 
+				margin-bottom: r(58px)
+			figure 
+				.img 
+					margin-bottom: r(26px)
+				figcaption 
+					h3 
+						+fz(r(18px))
+					p 
+						+fz(15px)
+		.tab-list 
+			.nav
+				padding: 15px 
+				background-color: rgb(255, 254, 250)
+				box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.15)
+				border-radius: 10px
+			.item 
+				padding: 0 r(6px)
+				&:last-child 
+					padding-right: 0 
+				&:first-child 
+					padding-left: 0
+				a 
+					.img 
+						border-radius: 5px
+						padding: r(20px) r(10px)
+						.conten
+							margin-top: r(24px)
+	+media-breakpoint-up(xl)
+		.tab-list 
+			.item 
+				a 
+					.img
+						padding: r(30px) r(10px)
+	

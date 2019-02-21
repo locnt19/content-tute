@@ -1,0 +1,58 @@
+.ct-news
+	+pad(r(30px) 0)
+	position: relative
+	.title 
+		text-align: center 
+		margin-bottom: r(20px) 
+	.swiper-container 
+		.swiper-wrapper
+			.swiper-slide 
+				.img 
+					img 
+						width: 100%
+				.conten 
+					text-align: center 
+					time 
+						+fz(r(12px))
+						+fw(400)
+						color: #999999 
+					p 
+						+fz(16px)
+						color: 
+		.swiper-nav
+			display: block
+			div
+				width: 3rem
+				cursor: pointer
+				height: 3rem
+				+flex-center()
+				opacity: .5
+				+pos(abs, 50% null null null)
+				transform: translateY(-100%)
+				z-index: 22
+				em
+					color: #ffffff
+					text-shadow: 0 0 10px #000
+					+fz(r(30px))
+				&.swiper-prev, &.swiper-next
+					&:focus 
+						outline: none
+				&.swiper-prev
+					left: 0
+				&.swiper-next
+					right: 0
+	+media-breakpoint-up(lg)
+		+pad(r(60px) 0)
+		.swiper-nav
+			div 
+				em 
+					text-shadow: none
+					color: #cfcfcf
+		.swiper-container 
+			.swiper-wrapper
+				.swiper-slide 
+					.img 
+						margin-bottom: 10px
+					.conten 
+						p 
+							margin-top: 20px

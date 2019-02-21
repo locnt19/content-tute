@@ -1,0 +1,19 @@
+section.ct-news
+	.container
+		.row 
+			.col.title
+				h2 Tin tức
+			.swiper-container 
+				.swiper-wrapper
+					-for(x=0; x<5; x++)
+						.swiper-slide 
+							.img 
+								img(src="./img/title/slider-1.png", alt="")
+							.conten 
+								time 13/08/2018 
+								p Vai trò của thiết kế trong Content Marketing và những điều Marketer cần biết. 
+				.swiper-nav
+					.swiper-prev
+						em.lnr.lnr-chevron-left
+					.swiper-next
+						em.lnr.lnr-chevron-right

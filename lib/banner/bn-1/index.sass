@@ -1,2 +1,14 @@
-.ct-banner 
-	
+.ct-banner, .ct-feel,
+	.swiper-container 
+		position: relative 
+		.swiper-pagination 
+			.swiper-pagination-bullet 
+				background: #f0b4b8
+				&.swiper-pagination-bullet-active
+					background: #ff6d00
+	+media-breakpoint-up(lg) 
+		.swiper-container 
+			.swiper-pagination 
+				position: absolute 
+				bottom: r(70px)
+				width: 100% 
