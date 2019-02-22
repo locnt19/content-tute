@@ -1,0 +1,14 @@
+extends _layout/layout
+
+block variables
+	- var title = 'tuyendung'
+	- var description = 'Description for tuyendung page'
+	- var bodyclass = 'tuyendung'
+block header
+	include ../lib/header/h-1/index.pug
+block main
+	include ../lib/home/banner/bn-2/index.pug
+	include ../lib/tuyendung/recruitment/index.pug
+	include ../lib/tuyendung/table/index.pug
+block footer
+	include ../lib/footer/f-1/index.pug
