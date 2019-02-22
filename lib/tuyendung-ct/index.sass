@@ -1,0 +1,104 @@
+.tuyendung-ct
+	.banner
+		.link
+			ul
+				li
+					display: inline-block
+					padding-right: 0.5rem
+					a
+						text-decoration: none
+						color: #004590
+						font-size: 10px
+						&:hover
+							color: #ff8700
+				h1
+					color: #004590
+					font-weight: 700
+					font-size: 41px
+		+media-breakpoint-up(md)
+			.link
+				position: absolute
+				top: 200px
+				left: 75px
+				ul
+					h1
+						color: white
+					li
+						a
+							color: white
+							font-size: 16px
+	.noidung
+		padding: 3rem 0
+		.noidung-1
+			.nd-1
+				margin: 1.5rem 0
+				padding: 1.5rem 0
+				border-top: #e0e0e0 1px solid
+				border-bottom: #e0e0e0 1px solid
+				.item
+					.nd-1-1
+						display: -webkit-box
+						i
+							padding-right: 1rem
+							font-size: 13px
+							color: #ff8700
+			.nd-2
+				padding-bottom: 0.5rem
+				p
+					padding-bottom: 0.5rem
+					font-weight: 700
+					color: #ff7800
+
+				ul
+					list-style: none
+					li
+						&:before
+							content: "\2022"
+							color: #bdb9b9
+							font-weight: bold
+							display: inline-block
+							width: 1em
+							margin-left: -2.5rem
+			.nd-3
+				.form-1
+					position: relative
+					form
+						input
+							font-size: 16px
+							padding: 0.5rem 0 0.5rem 3.5rem
+							border: #c3c2c2 1px solid
+							border-radius: 20px
+							width: 100%
+						button
+							position: absolute
+							width: 38px
+							height: 38px
+							border-radius: 50%
+							border: none
+							color: white
+							background: #ff8700
+							right: 2px
+							top: 2px
+		.noidung-2
+			h3
+				color: #ff7800
+			.item
+				padding: 1rem 0
+				border-bottom: #e0e0e0 1px solid
+				p
+					font-weight: 700
+				time
+					font-size: 13px
+					letter-spacing: 1px
+					color: grey
+					
+				&:hover
+					p
+						color: #031782
+					time
+						color: black
+							
+			.item.notboder
+				border-bottom: none
+			+media-breakpoint-down(sm)
+				padding-top: 3rem
