@@ -79,18 +79,20 @@ section.gioithieu
 				.mdi.mdi-chevron-right.right
 	.feedback
 		.container
-			h2 Cảm nhận của khách hàng
-			img(src="/img/logo-2.png", alt="/img/logo-2.png")
-			.swiper-container
-				.swiper-wrapper
-					.swiper-slide.item
-						h3 “ Chúng tôi đã có khoảng thời gian hợp tác đáng nhớ với Dịch Vụ Content, bất cứ lúc nào chúng tôi cần bài viết mới, với những yêu cầu và ý tưởng sẵn có, chúng tôi luôn nhận được những bài viết hoàn toàn sáng tạo. ”
-						p Chị Nguyễn Thị Thơ - Chủ shop Online
-					.swiper-slide.item
-						h3 “ Chúng tôi đã có khoảng thời gian hợp tác đáng nhớ với Dịch Vụ Content, bất cứ lúc nào chúng tôi cần bài viết mới, với những yêu cầu và ý tưởng sẵn có, chúng tôi luôn nhận được những bài viết hoàn toàn sáng tạo. ”
-						p Chị Nguyễn Thị Thơ - Chủ shop Online
-					.swiper-slide.item
-						h3 “ Chúng tôi đã có khoảng thời gian hợp tác đáng nhớ với Dịch Vụ Content, bất cứ lúc nào chúng tôi cần bài viết mới, với những yêu cầu và ý tưởng sẵn có, chúng tôi luôn nhận được những bài viết hoàn toàn sáng tạo. ”
-						p Chị Nguyễn Thị Thơ - Chủ shop Online
-			.pagi
+			.row 
+				.col.title
+					h2 Cảm nhận của khách hàng
+			.row 
+				.col 
+					.swiper-container 
+						.swiper-wrapper
+							-for(x=0; x<3; x++)
+								.swiper-slide
+									.img
+										img(src="./img/logo-1.png", alt="")
+									.text
+										p “ Chúng tôi đã có khoảng thời gian hợp tác đáng nhớ với Dịch Vụ Content, bất cứ lúc nào chúng tôi cần bài viết mới, với những yêu cầu và ý tưởng sẵn có, chúng tôi luôn nhận được những bài viết hoàn toàn sáng tạo. ”
+										h6 Chị Nguyễn Thị Thơ - Chủ shop Online
+						.swiper-pagination
+
 
