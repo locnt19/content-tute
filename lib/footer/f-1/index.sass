@@ -1,0 +1,157 @@
+.ct-footer 
+	
+	.footer-content
+		+pad(r(30px) 0)
+		background: url(../img/banner/bn-4.png) no-repeat 
+		background-size: cover
+		.footer-item 
+			text-align: center 
+			+ .footer-item 
+				margin-top: 1rem 
+			.img 
+				margin-bottom: .5rem
+			.footer-link 
+				p 
+					max-width: 285px
+					margin: auto
+					+fz(15px)
+					color: #666666 
+				a
+					text-decoration: none
+			.footer-title 
+				h4 
+					+fz(18px) 
+					+fw(400)
+					color: #333333 
+					margin-bottom: .3rem 
+			.list-group 
+				.list-group-item 
+					a 
+						+fz(15px)
+						color: #666666 
+						text-decoration: none
+	.footer-bottom 
+		background: #ff6d00
+		+pad(r(22px) 0)
+		.bottom-main 
+			text-align: center
+			.conten 
+				margin-bottom: .5rem
+				h4 
+					color: #ffffff
+					+fz(16px)
+					+fw(400) 
+				p 
+					color: #ffffff 
+					+fz(12px)
+			.search 
+				margin-bottom: .5rem
+				display: flex
+				align-items: flex-end
+				justify-content: center
+				.searchbox
+					max-width: 350px
+					display: flex
+					border: 1px solid #ffffff
+					// display: none
+					input
+						background: none
+						border: 0
+						+pad(.35rem 3rem .35rem 1rem)
+						+fz(r(13px))
+						color: #ffffff
+						&::placeholder 
+							color: #ffffff
+						&:focus 
+							outline: none
+					button
+						display: flex
+						border: 0
+						flex-grow: 1
+						justify-content: center
+						background: none 
+						color: #fff
+						position: relative
+						&:before 
+							content: ''
+							display: block
+							position: absolute
+							width: 1px
+							left: 0 
+							height: 23px 
+							background: #ffffff
+			.social
+				.list-inline 
+					margin-bottom: 0 
+					padding-left: 0 
+					display: flex 
+					justify-content: center
+					.list-inline-item 
+						margin-left: .5rem
+						list-style: none 
+						width: 30px 
+						height: 30px 
+						border-radius: 50%
+						border: 1px solid #ffffff
+						line-height: 26px
+						text-align: center
+						a 
+							text-decoration: none 
+							i 
+								+fz(13px) 
+								color: #ffffff
+	.footer-copyright 
+		background: #212121
+		+pad(r(22px) 0)
+		.copyright
+			text-align: center
+			p 
+				line-height: 22px
+				+fz(12px)
+				color: #999999
+		.nav
+			margin-bottom: 0
+			padding-left: 0
+			display: flex
+			justify-content: center 
+			flex-flow: wrap
+			.nav-item
+				list-style: none
+				+ .nav-item 
+					padding-left: .35rem
+					margin-left: .35rem
+					position: relative
+					&:before
+						content: ''
+						width: 1px
+						height: 12px
+						background: #999999
+						+pos(abs, 50% null null 0)
+						transform: translateY(-50%)
+				.nav-link
+					+fz(12px)
+					color: #999999
+	+media-breakpoint-up(lg) 
+		.footer-content
+			+pad(r(60px) 0)
+			.footer-item 
+				text-align: left 
+				.img 
+					margin-bottom: r(28px)
+				.footer-link 
+					p 
+						margin: 0
+				.footer-title 
+					h4 
+						margin-bottom: r(30px)
+		.footer-bottom 
+			.bottom-main 
+				text-align: left
+				display: flex 
+				justify-content: space-between 
+				align-items: center
+		.footer-copyright 
+			.copyright
+				text-align: right
+			.nav 
+				justify-content: flex-start
