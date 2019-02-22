@@ -1,0 +1,249 @@
+.tintuc-ct
+	.banner
+		.link
+			ul
+				li
+					display: inline-block
+					padding-right: 0.5rem
+					a
+						text-decoration: none
+						color: #004590
+						font-size: 10px
+						&:hover
+							color: #ff8700
+				h1
+					color: #004590
+					font-weight: 700
+					font-size: 41px
+		+media-breakpoint-up(md)
+			.link
+				position: absolute
+				top: 200px
+				left: 75px
+				ul
+					h1
+						color: white
+					li
+						a
+							color: white
+							font-size: 16px
+	.news-2
+		+pad(2rem 0)
+		.tintuc1
+			padding-bottom: 2rem
+			h2
+				font-size: 1.5rem
+				font-weight: 700
+			p
+				margin-bottom: 25px
+			time
+				color: grey
+			.img
+				padding: 1rem 0 3rem 0
+				img
+					max-width: 100%
+		.tintuc2
+			text-align: center
+			padding-bottom: 2rem
+			h3
+				color: #ff7800
+			.tintuc2_1
+				padding-left: 0.2rem
+				padding-right: 0.2rem
+				figcaption
+					time
+						color: grey
+					p
+						font-size: 15px
+						color: black
+				&:hover
+					img
+						opacity: 0.8
+					figcaption
+						time
+							color: #2e3192
+						p
+							color: #ff7800
+
+		+media-breakpoint-up(md)
+			
+			+pad(4rem 0)
+			.tintuc1
+			.tintuc2
+				text-align: left
+				h3
+					margin-left: -1rem
+					color: #ff7800
+				.tintuc2_1
+					padding-top: 1.5rem
+					padding-bottom: 1.5rem
+					figure
+						display: flex
+						text-align: left
+						img
+							width: 50%
+							height: 50%
+						figcaption
+							padding-left: 1rem
+				.tintuc2_1.boder
+					border-top: 1px solid #cecbcb
+					border-bottom: 1px solid #cecbcb
+					
+		.link-1
+			padding-left: 1rem
+			position: relative
+			.link-gg
+				i
+					font-weight: 700
+					color: red
+					border: 1px #d0d0d0 solid
+					padding: 0.2rem 0.3rem
+					border-radius: 2px
+				.link-gg-1
+					position: absolute
+					width: 20px
+					height: 24px
+					text-align: center
+					top: 00
+					right: -1.6rem
+					border: 1px #d0d0d0 solid
+					border-radius: 2px
+					p
+						color: black
+						font-size: 13.5px
+
+				&:hover
+					i
+						background: #d0d0d0
+					.link-gg-1
+						background: #d0d0d0
+		.link-2
+			margin-left: 2.5rem
+			position: relative
+			.link-fb
+				i
+					font-weight: 700
+					color: #fffefe
+					padding: 0.2rem 2.5rem 0.2rem 0.3rem
+					background: #2e3192
+					border-radius: 2px
+					border: 1px #2e3192 solid
+					display: flex
+				p
+					font-size: 13px
+					display: inline-block
+					color: white
+					font-weight: 700
+					position: absolute
+					top: 0.1rem
+					right: 0.3rem
+
+				.link-fb-1
+					position: absolute
+					width: 20px
+					height: 24px
+					text-align: center
+					top: 00
+					right: -1.6rem
+					color: black
+					font-size: 13.5px
+					border: 1px #d0d0d0 solid
+
+					border-radius: 2px
+					p
+						color: black
+						font-size: 13.5px
+						font-weight: 200
+
+				&:hover
+					i
+						background: #3d41b3
+						border: 1px #3d41b3 solid
+					.link-fb-1
+						background: #d0d0d0
+		.link-3
+			margin-left: 2.5rem
+			position: relative
+			.link-tw
+				i
+					font-weight: 700
+					color: #3daef3
+					padding: 0.2rem 3rem 0.2rem 0.3rem
+					background: #fdfdff
+					border-radius: 2px
+					border: 1px #d0d0d0 solid
+					display: inline-block
+				p
+					font-size: 13px
+					display: inline-block
+					color: black
+					position: absolute
+					top: 0.1rem
+					right: 0.3rem
+
+				.link-tw-1
+					position: absolute
+					width: 20px
+					height: 24px
+					text-align: center
+					top: 00
+					right: -1.6rem
+					border: 1px #d0d0d0 solid
+					border-radius: 2px
+					p
+						color: black
+						font-size: 13.5px
+						font-weight: 200
+				&:hover
+					i
+						background: #d0d0d0
+						border: 1px #d0d0d0 solid
+					.link-tw-1
+						background: #d0d0d0
+		.link-4
+			margin-left: 2.5rem
+			position: relative
+			.link-in
+				i
+					font-weight: 700
+					color: white
+					padding: 0.2rem 0.3rem 0.2rem 0.3rem
+					background: #2c62de
+					border-radius: 2px
+					display: inline-block
+				p
+					display: inline-block
+					color: black
+					position: absolute
+					top: 0
+					left: 1.5rem
+					width: 45px
+					height: 24px
+					border: #d0d0d0 1px solid
+					border-radius: 2px
+					text-align: center
+
+				.link-in-1
+					position: absolute
+					
+					top: 00
+					right: -1.6rem
+					border: 1px #d0d0d0 solid
+					border-radius: 2px
+					p
+						text-align: center
+						width: 20px
+						height: 24px
+						color: black
+						font-size: 13.5px
+						font-weight: 200
+						border: 1px #d0d0d0 solid
+						border-radius: 2px
+				&:hover
+					i
+						background: #2f2fff
+					p
+						background: #d0d0d0
+					.link-in-1
+						p
+							background: #d0d0d0
