@@ -1,7 +1,7 @@
 .ct-header 
 	position: fixed
 	width: 100%
-	z-index: 10 
+	z-index: 40
 	background: #ffffff 
 	padding: r(10px) 0
 	.main
@@ -24,10 +24,11 @@
 				width: 100%
 				+mar(null 1.5rem)
 				display: flex
-				border: 1px solid #006478
+				border: 1px solid #ffffff
 				// display: none
 				input
 					border: 0
+					background: none
 					+pad(.35rem 1rem)
 					+fz(r(13px))
 					&:focus 
@@ -37,8 +38,9 @@
 					border: 0
 					flex-grow: 1
 					justify-content: center
-					background: #006478
-					color: #fff
+					background: none
+					color: #ffffff
+					border-left: 1px solid #ffffff
 		.language 
 			cursor: pointer
 			user-select: none
@@ -115,9 +117,10 @@
 							transform: rotate(-45deg)
 							transition: bottom 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1)
 		.main-nav 
+			margin-top: 10px
 			+pos(fixed, null 0 null null)
 			background-image: linear-gradient(to top right,#ff8c12cc, #ffc990)
-			height: calc(100% - 123.78px)
+			height: calc(100% - 61.78px)
 			width: 300px
 			+tran(.75s)
 			transform: translateX(100%)
