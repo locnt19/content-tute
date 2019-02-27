@@ -1,29 +1,27 @@
 .tintuc
 	.banner
 		position: relative
-		img
-			filter: brightness(70%)
+		background: url(../img/banner/bn-8-o.png) center 0 no-repeat
+		padding-bottom: 70%
+		+media-breakpoint-up(sm)
+			padding-bottom: 0
+			height: 450px
 		.breadcrumb
-			h1
-				display: none
+			position: absolute
+			color: #fff
+			top: 35%
+			a 
+				+fz(16px)
 			ul
-				margin: 14px 0
-			a
-				color: #333
-			+media-breakpoint-up(lg)
+				margin: 0
+			h1
+				display: block
+				font-weight: 700
+				font-size: 41px
 				color: #fff
-				position: absolute
-				top: 30%
-				ul
-					margin: 0
-				h1
-					display: block
-					font-weight: 700
-					font-size: 41px
-					color: #fff
-				a
-					margin: 0
-					color: #fff
+			a
+				margin: 0
+				color: #fff
 	.news
 		padding-bottom: 50px
 		h2

@@ -1,33 +1,27 @@
 .gioithieu, .ct-banner-2
 	.banner
 		position: relative
-		img
-			filter: brightness(70%)
+		background: url(../img/banner/bn-2-o.png) center 0 no-repeat
+		padding-bottom: 70%
+		+media-breakpoint-up(sm)
+			padding-bottom: 0
+			height: 450px
 		.breadcrumb
-			h1
-				display: none
-			ul
-				margin: 14px 0
+			position: absolute
+			color: #fff
+			top: 35%
 			a 
-				font-family: "Encode Sans Light", Regular
-				+fz(13px)
-				color: #333
-			+media-breakpoint-up(lg)
+				+fz(16px)
+			ul
+				margin: 0
+			h1
+				display: block
+				font-weight: 700
+				font-size: 41px
 				color: #fff
-				position: absolute
-				top: 30%
-				a 
-					+fz(16px)
-				ul
-					margin: 0
-				h1
-					display: block
-					font-weight: 700
-					font-size: 41px
-					color: #fff
-				a
-					margin: 0
-					color: #fff
+			a
+				margin: 0
+				color: #fff
 	.choose,
 	.about,
 	.team,
@@ -91,56 +85,3 @@
 					left: -30px
 				.right
 					right: -30px
-	.feedback
-		// background: url(../img/banner/bn-3.png) no-repeat center center fixed
-		// background-size: cover
-		// text-align: center
-		// position: relative
-		// h2
-		// 	padding: 60px 0 50px
-		// 	color: #fff
-		// 	z-index: 1
-		// 	+media-breakpoint-down(lg)
-		// 		padding: 30px 0
-		// .item
-		// 	h3
-		// 		font-weight: 300
-		// 		font-size: 24px
-		// 		color: #ffffff
-		// 	p
-		// 		color: #ffffff
-		// 		margin-top: 16px
-		// 		opacity: .5
-		// .swiper-container
-		// 	margin-top: 48px
-		// 	width: 100%
-		// 	+media-breakpoint-up(lg)
-		// 		width: 50%
-		// .pagi
-		// 	margin-top: 125px
-		// 	span
-		// 		width: 10px
-		// 		height: 10px
-		// 		background: #8e99a3
-		// 		opacity: 1
-		// 		&.swiper-pagination-bullet-active
-		// 			background: #ff6d00
-		// 		+ span
-		// 			margin-left: 10px
-		// +media-breakpoint-up(lg)
-		// 	&:before,
-		// 	&:after
-		// 		content: ''
-		// 		position: absolute
-		// 		top: 50%
-		// 		transform: translateY(-50%)
-		// 	&:before
-		// 		background: url(../img/social-2.png) no-repeat
-		// 		width: 500px
-		// 		height: 370px
-		// 		left: 0
-		// 	&:after
-		// 		background: url(../img/social-1.png) no-repeat
-		// 		width: 510px
-		// 		height: 520px
-		// 		right: 0
