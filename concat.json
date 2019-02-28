@@ -2,7 +2,9 @@
     "scripts": [
 		"./node_modules/jquery/dist/jquery.js",
         "./bower_components/swiper/dist/js/swiper.js",
-        "./bower_components/aos/dist/aos.js",
+		"./bower_components/aos/dist/aos.js",
+		"./scripts/_base64.js",
+		"./scripts/main.js",
         "./scripts/_mapping.js",
         "./scripts/_mapping-listener.js"
     ],
