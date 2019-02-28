@@ -1,7 +1,6 @@
 .ct-footer 
-	
 	.footer-content
-		+pad(r(30px) 0)
+		+pad(r(48px) 0)
 		background: url(../img/banner/bn-10.png) no-repeat 
 		background-size: cover
 		.footer-item 
@@ -10,20 +9,22 @@
 				margin-top: 1rem 
 			.img 
 				margin-bottom: .5rem
-			.footer-link 
-				p 
+			.footer-link
+				p, a
 					max-width: 285px
 					margin: auto
 					+fz(15px)
 					color: #666666 
-				a
 					text-decoration: none
+					display: block
+				p
+					margin-top: +r(16px)
 			.footer-title 
 				h4 
 					+fz(18px) 
-					+fw(400)
+					+fw(600)
 					color: #333333 
-					margin-bottom: .3rem 
+					margin: +r(24px) auto +r(16px)
 			.list-group 
 				.list-group-item 
 					a 
@@ -74,6 +75,7 @@
 						background: none 
 						color: #fff
 						position: relative
+						padding: 0 1rem
 						&:before 
 							content: ''
 							display: block
@@ -91,17 +93,17 @@
 					.list-inline-item 
 						margin-left: .5rem
 						list-style: none 
-						width: 30px 
-						height: 30px 
-						border-radius: 50%
-						border: 1px solid #ffffff
-						line-height: 26px
-						text-align: center
+						// width: 30px 
+						// height: 30px 
+						// border-radius: 50%
+						// border: 1px solid #ffffff
+						// line-height: 26px
+						// text-align: center
 						a 
 							text-decoration: none 
-							i 
-								+fz(13px) 
-								color: #ffffff
+							// i 
+							// 	+fz(13px) 
+							// 	color: #ffffff
 	.footer-copyright 
 		background: #212121
 		+pad(r(22px) 0)
@@ -135,14 +137,15 @@
 					color: #999999
 	+media-breakpoint-up(lg) 
 		.footer-content
-			+pad(r(60px) 0)
+			// +pad(r(60px) 0)
 			.footer-item 
 				text-align: left 
 				.img 
 					margin-bottom: r(28px)
 				.footer-link 
-					p 
-						margin: 0
+					p
+						margin-top: 0
+						margin-bottom: +r(16px)
 				.footer-title 
 					h4 
 						margin-bottom: r(30px)
