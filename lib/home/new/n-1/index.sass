@@ -30,23 +30,29 @@
 			transform: translateY(-100%)
 			z-index: 22
 			em
-				color: #ccc
-				text-shadow: 0 0 10px #000
+				color: #e5e5e5
 				+fz(r(48px))
 			&.swiper-prev, &.swiper-next
 				&:focus 
 					outline: none
 			&.swiper-prev
-				left: -2rem
+				left: 0rem
 			&.swiper-next
-				right: -2rem
+				right: 0rem
+	+media-breakpoint-up(md) 
+		.swiper-nav 
+			div
+				&.swiper-prev 
+					left: -2rem 
+				&.swiper-next 
+					right: -2rem
 	+media-breakpoint-up(lg)
 		+pad(r(60px) 0)
 		.swiper-nav
 			div 
 				em 
 					text-shadow: none
-					color: #cfcfcf
+					
 		.swiper-container 
 			.swiper-wrapper
 				.swiper-slide 

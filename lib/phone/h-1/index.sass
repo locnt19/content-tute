@@ -1,6 +1,10 @@
 .ct-phone 
-	+pos(fix, 28% 0 null null)
+	+pos(fix, 15% 0 null null)
 	z-index: 100
+	transform: translateX(73%) 
+	transition: .5s all ease-in-out
+	+media-breakpoint-up(md) 
+		top: 20%
 	.phone-calto-action-ripple 
 		border-radius: 100%
 		box-sizing: border-box
@@ -32,3 +36,5 @@
 			align-items: center 
 			border-top-left-radius: 50px
 			border-bottom-left-radius: 50px
+	&.active 
+		transform: translateX(0) 
